@@ -77,10 +77,11 @@ body{
 /* PAGE 2 */
 
 #page2{
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
   overflow-y:auto;
   background: linear-gradient(to bottom,#f8e1c4,#f6d6bd);
+  padding-top: 20px;
 }
 
 .letter-container{
@@ -88,7 +89,6 @@ body{
   text-align:center;
   padding:30px 20px;
 }
-
 .photo{
   width:180px;
   height:180px;
@@ -97,6 +97,11 @@ body{
   border:5px solid white;
   margin-bottom:20px;
   box-shadow:0 0 20px rgba(0,0,0,0.3);
+
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+  background: white;
 }
 
 .letter{
